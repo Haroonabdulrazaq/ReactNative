@@ -1,10 +1,6 @@
-import { View, StatusBar, Button } from "react-native";
-
-import ModalComponent from "./ModalComponent";
-import { useState } from "react";
+import { View, ActivityIndicator, Button } from "react-native";
 
 export default function App() {
-  const [toggleVisibility, setToggleVisibility] = useState(true);
   return (
     <View
       style={{
@@ -12,16 +8,6 @@ export default function App() {
         backgroundColor: "plum",
         padding: 40,
       }}
-    >
-      <StatusBar
-        backgroundColor="plum"
-        barStyle="red-content"
-        hidden={toggleVisibility} //Done: Assignment to toggle visibility of statusbar using a state variable
-      />
-      <Button
-        title="toggle"
-        onPress={() => setToggleVisibility(!toggleVisibility)}
-      />
-    </View>
+    ></View>
   );
 }
