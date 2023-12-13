@@ -1,4 +1,4 @@
-import { View, Pressable } from "react-native";
+import { View, Button } from "react-native";
 const logoImg = require("./assets/adaptive-icon.png");
 
 export default function App() {
@@ -14,7 +14,11 @@ export default function App() {
         paddingRight: 40,
       }}
     >
-      <Pressable></Pressable>
+      <Button
+        title="Press"
+        onPress={(e) => handlePress(e)}
+        color="midnightblue"
+      />
     </View>
   );
 }
