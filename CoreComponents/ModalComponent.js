@@ -2,7 +2,7 @@ import { useState } from "react";
 import { View, Modal, Button, Text } from "react-native";
 const logoImg = require("./assets/adaptive-icon.png");
 
-export default function App() {
+export default function ModalComponent() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <View
