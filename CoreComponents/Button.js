@@ -1,5 +1,4 @@
 import { View, Button } from "react-native";
-const logoImg = require("./assets/adaptive-icon.png");
 
 export default function App() {
   const handlePress = (e) => {
